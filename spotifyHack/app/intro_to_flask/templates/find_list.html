@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+  <h2>Find Playlist</h2>
+  <form action="{{ url_for('find_list') }}" method=post>
+ 
+    {{ form.list.label }}
+    {{ form.list }}
+ 
+    {{ form.password.label }}
+    {{ form.password }}
+ 
+    {{ form.submit }}
+  </form>
+  {% if 1 != 0 %}
+	People suck.
+  {% endif %}
+
+{% endblock %}
